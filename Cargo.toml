@@ -3,5 +3,9 @@ members = ["crates/*"]
 resolver = "2"
 
 [workspace.package]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/rtkay123/risk-hound"
 
 [workspace.dependencies]
+hound-services = { path = "crates/hound-services" }
+tracing = "0.1.40"

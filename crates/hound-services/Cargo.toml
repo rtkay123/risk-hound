@@ -1,0 +1,19 @@
+[package]
+name = "hound-services"
+version = "0.1.0"
+edition = "2021"
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[dependencies]
+tracing = { optional = true, workspace = true }
+tracing-subscriber = { optional = true, version = "0.3.18" }
+
+[features]
+default = []
+tracing = ["dep:tracing", "tracing-subscriber/env-filter"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

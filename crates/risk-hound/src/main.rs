@@ -1,3 +1,7 @@
+use hound_services::tracing::Telemetry;
+use tracing::info;
+
 fn main() {
-    println!("Hello, world!");
+    let tracing = Telemetry::builder().build();
+    info!("Hello, world!");
 }
