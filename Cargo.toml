@@ -7,5 +7,12 @@ license = "MIT OR Apache-2.0"
 repository = "https://github.com/rtkay123/risk-hound"
 
 [workspace.dependencies]
+anyhow = "1.0.90"
+axum = "0.7.7"
 hound-services = { path = "crates/hound-services" }
+serde = "1.0.210"
+tokio = "1.40.0"
 tracing = "0.1.40"
+utoipa = "5.1.1"
+utoipa-axum = "0.1.1"
+utoipa-swagger-ui = "8.0.1"

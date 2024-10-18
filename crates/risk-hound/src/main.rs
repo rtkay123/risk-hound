@@ -1,7 +1,9 @@
+use anyhow::Result;
 use hound_services::tracing::Telemetry;
-use tracing::info;
 
-fn main() {
-    let tracing = Telemetry::builder().build();
-    info!("Hello, world!");
+#[tokio::main]
+async fn main() -> Result<()> {
+    let _tracing = Telemetry::builder().build();
+
+    risk_hound::serve().await
 }

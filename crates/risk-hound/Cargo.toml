@@ -7,5 +7,12 @@ repository.workspace = true
 publish = false
 
 [dependencies]
+anyhow.workspace = true
+axum = { workspace = true, features = ["http2", "macros"] }
 hound-services = { workspace = true, features = ["tracing"] }
+serde = { workspace = true, features = ["derive"] }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
 tracing.workspace = true
+utoipa = { workspace = true, features = ["axum_extras", "debug"] }
+utoipa-axum = { workspace = true, features = ["debug"] }
+utoipa-swagger-ui = { workspace = true, features = ["axum"] }
